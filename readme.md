@@ -2,7 +2,7 @@
 
 ini adalah aplikasi fun project 2 💬 Obrolan With Bot.
 
-<p style="color: red;">Catatan : API tidak/jangan di push ke github!!!</p>
+<p style="color: red;">Catatan : API tidak di push ke github!!! demi keamanan karena API sangat sensitif</p>
 
 ## Screenshots
 
