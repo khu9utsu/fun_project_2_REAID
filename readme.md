@@ -5,22 +5,20 @@ ini adalah aplikasi fun project 2 💬 Obrolan With Bot.
 ## Screenshots
 
 Halaman Utama
-![App Screenshot](./assets/hal_utama.png)
-Hasil Skor
-![App Screenshot](./assets/skor.png)
+![App Screenshot](./assets/sc.png)
 
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/khu9utsu/fun_project_1_REAID
+  git clone https://github.com/khu9utsu/fun_project_2_REAID
 ```
 
 Go to the project directory
 
 ```bash
-  cd fun_project_1_REAID
+  cd fun_project_2_REAID
 ```
 
 Install dependencies
@@ -41,4 +39,4 @@ http://localhost:8501/
 
 ## Aplikasi
 
-https://fun-project-1-reaid-andri-purnama.streamlit.app/
+https://fun-project-2-reaid-andri-purnama.streamlit.app/
