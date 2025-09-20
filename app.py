@@ -12,14 +12,26 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-#Mengambil API key dari secrets.toml
 def get_api_key():
     try:
-        if 'openrouter' in st.secrets and 'api_key' in st.secrets.openrouter:
-            return st.secrets.openrouter.api_key
-        else:
+        env_key = os.getenv('OPENROUTER_API_KEY')
+        if env_key:
+            return env_key
+        try:
+            if hasattr(st, 'secrets'):
+                if 'openrouter' in st.secrets and 'api_key' in st.secrets.openrouter:
+                    return st.secrets.openrouter.api_key
+                elif 'OPENROUTER_API_KEY' in st.secrets:
+                    return st.secrets['OPENROUTER_API_KEY']
+                elif 'api_key' in st.secrets:
+                    return st.secrets.api_key
+        except Exception as e:
+            st.sidebar.error(f"Error accessing secrets: {e}")
             return ""
-    except:
+        
+        return ""
+    except Exception as e:
+        st.error(f"Error getting API key: {e}")
         return ""
 
 # Style CSS
