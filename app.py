@@ -15,11 +15,17 @@ st.set_page_config(
 #Mengambil API key dari secrets.toml
 def get_api_key():
     try:
+        # Coba beberapa format yang mungkin
         if 'openrouter' in st.secrets and 'api_key' in st.secrets.openrouter:
             return st.secrets.openrouter.api_key
+        elif 'OPENROUTER_API_KEY' in st.secrets:
+            return st.secrets['OPENROUTER_API_KEY']
+        elif 'api_key' in st.secrets:
+            return st.secrets.api_key
         else:
             return ""
-    except:
+    except Exception as e:
+        st.error(f"Error accessing secrets: {e}")
         return ""
 
 # Style CSS

@@ -21,6 +21,13 @@ Go to the project directory
   cd fun_project_2_REAID
 ```
 
+create API
+
+```bash
+  https://openrouter.ai
+  copy api ke .streamlit/secrets.toml
+```
+
 Install dependencies
 
 ```bash
