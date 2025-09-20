@@ -2,9 +2,7 @@
 
 ini adalah aplikasi fun project 2 💬 Obrolan With Bot.
 
-<p style="color: red;">Catatan : API jangan di push ke github, disini saya coba push ke github, karena agar berjalan di streamlit.app </p>
-cara tidak tercomit ke github : .gitignore <br>
-tulikan perintah kode: .streamlit/secrets.toml
+<p style="color: red;">Catatan : API tidak/jangan di push ke github!!!</p>
 
 ## Screenshots
 
